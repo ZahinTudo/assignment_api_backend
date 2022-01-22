@@ -91,7 +91,7 @@ run().catch(console.dir);
 // Server checking
 
 app.get("/", (req, res) => {
-  res.send("Running Destino Server");
+  res.send("Running backend Server");
 });
 
 app.listen(port, () => {
