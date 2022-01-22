@@ -49,6 +49,7 @@ async function run() {
       const data = listingsAndReviews
         .find(query)
         .skip(skip)
+        .limit(20)
         .sort({ price: sort });
 
       const items = await data.toArray();
